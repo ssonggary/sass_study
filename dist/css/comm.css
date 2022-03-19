@@ -1,4 +1,8 @@
+@charset "UTF-8";
 body {
-  background-color: red;
+  background: #999;
+  color: blue;
 }
+
+/*여러줄 주석 - css에서도 보여지는 주석*/
 /*# sourceMappingURL=comm.css.map */

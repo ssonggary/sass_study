@@ -1,1 +1,8 @@
-body {background-color: red;}
+$color:#999;
+$color2: blue;
+
+body {background: $color; color: $color2;}
+
+// 한줄주석 - sass에서만 적용
+/*여러줄 주석 - css에서도 보여지는 주석*/
+
