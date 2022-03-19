@@ -1,8 +1,87 @@
 @charset "UTF-8";
-body {
-  background: #999;
-  color: blue;
+/*여러줄 주석 - css에서도 보여지는 주석*/
+/*변수를 줄때는
+영문
+영문+숫자
+영문-_숫자
+대소문자
+*/
+.btn1 {
+  display: block;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  color: #c9c9c9;
+  background: #fff;
+  border: 1px solid #c9c9c9;
+  text-align: center;
 }
 
-/*여러줄 주석 - css에서도 보여지는 주석*/
+.btn1:hover {
+  background: #c9c9c9;
+  color: #fff;
+}
+
+.btn2 {
+  display: block;
+  font-size: 30px;
+  padding: 10px;
+  border: 1px solid red;
+  background: blue;
+  color: #c9c9c9;
+}
+
+.a {
+  color: red;
+}
+
+.a ul {
+  border: 1px solid red;
+}
+
+.a ul > li {
+  background: #c9c9c9;
+}
+
+.a ul > li a {
+  text-decoration: none;
+}
+
+.a ul > li a:hover {
+  color: red;
+}
+
+.a ul > li a.bbb {
+  font-size: 11px;
+}
+
+.a ul > li .bbb {
+  text-indent: 10px;
+}
+
+.a ul > li:last-child {
+  border: 1px solid yellow;
+}
+
+div {
+  border: 1px solid red;
+}
+
+div::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+p {
+  float: left;
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+}
+
+span {
+  border: 1px solid #c9c9c9;
+}
 /*# sourceMappingURL=comm.css.map */

@@ -1,8 +1,60 @@
-$color:#999;
-$color2: blue;
-
-body {background: $color; color: $color2;}
-
 // 한줄주석 - sass에서만 적용
 /*여러줄 주석 - css에서도 보여지는 주석*/
+
+/*변수를 줄때는
+영문
+영문+숫자
+영문-_숫자
+대소문자
+*/
+
+$gray:#c9c9c9;
+$white: #fff;
+$red: red;
+$blue: blue;
+$yellow: yellow;
+$fs11: 11px;
+$fs30: 30px;
+
+.btn1 {display: block; width: 200px; height: 50px; line-height: 50px; font-size: 20px; color: $gray; background: $white; border: 1px solid $gray; text-align: center;
+    &:hover {background: $gray; color: $white;}
+}
+
+.btn2 { display: block; font-size: $fs30; padding: 10px; border: 1px solid $red; background: $blue; color: $gray;}
+
+
+.a {color: $red;
+    ul {border: 1px solid $red;
+        > li { background: $gray; 
+            a { text-decoration: none;
+                &:hover {color: $red;}
+                &.bbb { font-size: $fs11;}
+            }
+            .bbb {text-indent: 10px;}
+            &:last-child {border: 1px solid $yellow;}
+        }
+    }
+}
+
+@mixin test {
+    width: 100px; height: 100px; border: 1px solid $red;
+}
+
+@mixin clear {
+    &::after {content: ""; display: block; clear: both;}
+}
+
+@mixin border($color) {
+    border: 1px solid $color;
+}
+
+@mixin box {
+    width: $w; height: $h;
+}
+div {
+    @include border(red)
+    @include clear();
+}
+p { float: left; @include test();}
+span {@include border($gray)}
 
