@@ -1,5 +1,5 @@
 @charset "UTF-8";
-div {
+.test {
   width: 300px;
   height: 400px;
   border: 3px solid blue;
@@ -62,15 +62,76 @@ p {
   content: "제목5 ";
 }
 
-.ico_var {
+.ico_book {
   background: url(../../img/book.png) no-repeat;
 }
 
-.ico_var {
+.ico_zoom {
   background: url(../../img/zoom.png) no-repeat;
 }
 
-.ico_var {
+.ico_phone {
   background: url(../../img/phone.png) no-repeat;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+.a, .c {
+  font-size: 14px;
+  color: aqua;
+}
+
+.fs20, .b {
+  font-size: 20px;
+}
+
+.visual div, .main div, .footer div {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.a {
+  font-weight: bold;
+  background: grey;
+}
+
+.visual {
+  background: pink;
+  height: 300px;
+}
+
+.visual div {
+  background: rgba(0, 0, 0, 0.5);
+  height: 300px;
+}
+
+.main {
+  background: purple;
+  height: 500px;
+}
+
+.main div {
+  background: rgba(0, 0, 0, 0.5);
+  height: 500px;
+}
+
+.footer {
+  background: violet;
+  height: 150px;
+}
+
+.footer div {
+  background: rgba(0, 0, 0, 0.5);
+  height: 150px;
 }
 /*# sourceMappingURL=comm2.css.map */
