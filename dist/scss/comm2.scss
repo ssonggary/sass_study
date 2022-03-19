@@ -15,6 +15,15 @@ div.#{$bx} {border: 1px solid red;}
 div {@include bx (right, 2px, red)}
 p {@include bx (left, 2px, red)}
 
-.list li.ico1 {background: url(../../img/icon1.png) no-repeat;}
-@for $i from 1 to 5 {
+// .list li.ico1 {background: url(../../img/icon1.png) no-repeat;}
+// .list li.ico2 {background: url(../../img/icon2.png) no-repeat;}
+// .list li.ico3 {background: url(../../img/icon3.png) no-repeat;}
+// .list li.ico4 {background: url(../../img/icon4.png) no-repeat;}
+// .list li.ico5 {background: url(../../img/icon5.png) no-repeat;}
+
+.list li { text-indent: 30px; background: no-repeat 0 0 / 20px auto;}
+
+@for $i from 1 to 6 {
+    .list li.ico#{$i} {background-image: url(../../img/icon#{$i}.png);}
+    .list li:nth-child(#{$i}):before {content: '제목#{$i} ';}
 }
