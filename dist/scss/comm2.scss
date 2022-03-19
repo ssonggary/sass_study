@@ -1,1 +1,20 @@
-body {background: red;}
+@mixin box($w, $h) {
+    width: $w; height: $h;
+}
+
+div { @include box(300px, 400px); border: 3px solid blue;}
+
+$bx : box;
+
+div.#{$bx} {border: 1px solid red;}
+
+@mixin bx($position, $wid, $color) {
+    border-#{$position}:$wid solid $color;
+}
+
+div {@include bx (right, 2px, red)}
+p {@include bx (left, 2px, red)}
+
+.list li.ico1 {background: url(../../img/icon1.png) no-repeat;}
+@for $i from 1 to 5 {
+}
