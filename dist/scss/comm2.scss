@@ -27,3 +27,10 @@ p {@include bx (left, 2px, red)}
     .list li.ico#{$i} {background-image: url(../../img/icon#{$i}.png);}
     .list li:nth-child(#{$i}):before {content: '제목#{$i} ';}
 }
+
+
+@each $var in book, zoom, phone {
+    .ico_#{var}{
+        background: url(../../img/#{$var}.png) no-repeat;
+    }
+}

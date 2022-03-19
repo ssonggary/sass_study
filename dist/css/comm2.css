@@ -61,4 +61,16 @@ p {
 .list li:nth-child(5):before {
   content: "제목5 ";
 }
+
+.ico_var {
+  background: url(../../img/book.png) no-repeat;
+}
+
+.ico_var {
+  background: url(../../img/zoom.png) no-repeat;
+}
+
+.ico_var {
+  background: url(../../img/phone.png) no-repeat;
+}
 /*# sourceMappingURL=comm2.css.map */
