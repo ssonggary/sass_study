@@ -8,7 +8,7 @@
   border-radius: 15px;
 }
 
-div {
+.popo {
   width: 300px;
   height: 300px;
   background: #000;
@@ -18,5 +18,49 @@ div {
   z-index: 2;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.a {
+  border: 1px solid blue;
+  background: red;
+}
+
+.a:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.a > div {
+  float: left;
+}
+
+.b {
+  width: 150px;
+  overflow: hidden;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  width: 100px;
+  height: 66px;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.d {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 500px;
+  height: 200px;
+  border: 1px solid #000;
 }
 /*# sourceMappingURL=comm3.css.map */
